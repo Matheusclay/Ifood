@@ -7,5 +7,15 @@
 </head>
 <body onload="window.alert('Seja bem vindo')">
     <p>Hello World!</p>
+    <input type="text" id="valor">
+    <button id="enviar">Enviar</button>
+    <script>
+        document.querySelector('#enviar').addEventListener('click', mudarValor);
+        function mudarValor(){
+            document.querySelector("#valor").value = "Novo Conteúdo";
+        }    
+            </script>
+
+        
 </body>
 </html>
