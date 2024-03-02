@@ -9,13 +9,18 @@
     <p>Hello World!</p>
     <input type="text" id="valor">
     <button id="enviar">Enviar</button>
+    <div id="conteudo"></div>
     <script>
         document.querySelector('#enviar').addEventListener('click', mudarValor);
         function mudarValor(){
             document.querySelector("#valor").value = "Novo Conteúdo";
+            if (document.getElementById('conteudo').innerHTML == "<p>Estou usando um smartphone</p>"){
+                document.getElementById('conteudo').innerHTML = "<p>Estou usando um computador</p>";
         }    
+        else{
+            document.getElementById('conteudo').innerHTML = "<p>Estou usando um smartphone</p>";
+        }
+    }	
             </script>
-
-        
 </body>
 </html>
