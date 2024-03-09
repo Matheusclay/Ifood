@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+
+
+.menu, .submenu {
+    list-style: none;
+}
+
+#logo {
+    font-size: 1.25em;
+}
+
