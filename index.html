@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Ifood</title>
+    <title>Site iFood</title>
 </head>
-<body onload="window.alert('Seja bem vindo')">
-    <p>Hello World!</p>
+<body onload="window.alert('Seja bem vindo!')">
+    <p>Hello world!</p>
     <input type="text" id="valor">
     <button id="enviar">Enviar</button>
     <div id="conteudo"></div>
+    
     <script>
-        document.querySelector('#enviar').addEventListener('click', mudarValor);
+        document.querySelector("#enviar")
+        .addEventListener("click", mudarValor);
+
         function mudarValor(){
-            document.querySelector("#valor").value = "Novo Conteúdo";
-            if (document.getElementById('conteudo').innerHTML == "<p>Estou usando um smartphone</p>"){
-                document.getElementById('conteudo').innerHTML = "<p>Estou usando um computador</p>";
-        }    
-        else{
-            document.getElementById('conteudo').innerHTML = "<p>Estou usando um smartphone</p>";
+            document.querySelector("#valor").value = "Novo conteúdo";
+            if (document.getElementById("conteudo").innerHTML == "<p>Estou usando um smartphone</p>"){
+                document.getElementById("conteudo").innerHTML = "<p>Estou usando um computador</p>";
+            }
+            else{
+                document.getElementById("conteudo").innerHTML = "<p>Estou usando um smartphone</p>";
+            }
         }
-    }	
-            </script>
+
+    </script>
 </body>
 </html>
